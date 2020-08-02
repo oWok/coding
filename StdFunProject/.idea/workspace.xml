@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="726c9dad-b817-4d86-abcb-43257b5c08b2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UNJKFQSB5Rf5HpNNgGHhc20lvY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/andriod_kotlin/first" />
+  </component>
+  <component name="RunManager">
+    <configuration name="standard.FunctionsKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="StdFunProject" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="standard.FunctionsKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.standard.FunctionsKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="726c9dad-b817-4d86-abcb-43257b5c08b2" name="Default Changelist" comment="" />
+      <created>1575191053522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575191053522</updated>
+      <workItem from="1575191056404" duration="617000" />
+      <workItem from="1575191692510" duration="3748000" />
+      <workItem from="1575462778901" duration="304000" />
+      <workItem from="1575463787794" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="693" y="280" key="FileChooserDialogImpl" timestamp="1575463821801">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="693" y="280" key="FileChooserDialogImpl/-1920.0.1827.1080/0.0.1827.1080@0.0.1827.1080" timestamp="1575463821801" />
+    <state width="1784" height="295" key="GridCell.Tab.0.bottom" timestamp="1575195164417">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state width="1784" height="295" key="GridCell.Tab.0.bottom/-1920.0.1827.1080/0.0.1827.1080@0.0.1827.1080" timestamp="1575195164417" />
+    <state width="1784" height="295" key="GridCell.Tab.0.center" timestamp="1575195164416">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state width="1784" height="295" key="GridCell.Tab.0.center/-1920.0.1827.1080/0.0.1827.1080@0.0.1827.1080" timestamp="1575195164416" />
+    <state width="1784" height="295" key="GridCell.Tab.0.left" timestamp="1575195164416">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state width="1784" height="295" key="GridCell.Tab.0.left/-1920.0.1827.1080/0.0.1827.1080@0.0.1827.1080" timestamp="1575195164416" />
+    <state width="1784" height="295" key="GridCell.Tab.0.right" timestamp="1575195164417">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state width="1784" height="295" key="GridCell.Tab.0.right/-1920.0.1827.1080/0.0.1827.1080@0.0.1827.1080" timestamp="1575195164417" />
+    <state x="606" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1575463788339">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="606" y="363" key="com.intellij.ide.util.TipDialog/-1920.0.1827.1080/0.0.1827.1080@0.0.1827.1080" timestamp="1575463788339" />
+    <state x="292" y="263" key="new project wizard" timestamp="1575462970310">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="292" y="263" key="new project wizard/-1920.0.1827.1080/0.0.1827.1080@0.0.1827.1080" timestamp="1575462970310" />
+  </component>
+</project>

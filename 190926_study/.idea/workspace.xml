@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e775831-55f2-4cc1-9767-b4ba95a59f9e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RNCifI1GKKwsfGIlIl0tIJbRlB" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="kotlin.migration.detection.enabled" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/study" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Kotlin" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\학업\kotlin\190926_study\src\Main" />
+      <recent name="D:\학업\kotlin\190926_study\src\Problem" />
+      <recent name="D:\학업\kotlin\190926_study\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Kotlin.members.MemberKt">
+    <configuration name="ShapesProject.angle.AnglesKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="study_kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ShapesProject.angle.AnglesKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShapesProject.basic.PointKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="study_kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ShapesProject.basic.PointKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShapesProject.line.LinesKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="study_kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ShapesProject.line.LinesKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShapesProject.util.Image_printKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="study_kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ShapesProject.util.Image_printKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="members.MemberKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="study_kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="members.MemberKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.members.MemberKt" />
+        <item itemvalue="Kotlin.ShapesProject.util.Image_printKt" />
+        <item itemvalue="Kotlin.ShapesProject.angle.AnglesKt" />
+        <item itemvalue="Kotlin.ShapesProject.line.LinesKt" />
+        <item itemvalue="Kotlin.ShapesProject.basic.PointKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e775831-55f2-4cc1-9767-b4ba95a59f9e" name="Default Changelist" comment="" />
+      <created>1569498294668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569498294668</updated>
+      <workItem from="1569498298132" duration="5347000" />
+      <workItem from="1569584978597" duration="8060000" />
+      <workItem from="1569662870337" duration="1466000" />
+      <workItem from="1569665910576" duration="1201000" />
+      <workItem from="1569750477138" duration="208000" />
+      <workItem from="1569751276140" duration="3755000" />
+      <workItem from="1569844733696" duration="3046000" />
+      <workItem from="1569916729419" duration="7949000" />
+      <workItem from="1570350497480" duration="2408000" />
+      <workItem from="1570357943369" duration="317000" />
+      <workItem from="1570358263783" duration="3252000" />
+      <workItem from="1570363509575" duration="523000" />
+      <workItem from="1570441435498" duration="6466000" />
+      <workItem from="1570529419133" duration="17401000" />
+      <workItem from="1570623770611" duration="453000" />
+      <workItem from="1570704940846" duration="4169000" />
+      <workItem from="1570799648235" duration="34599000" />
+      <workItem from="1571136057464" duration="3955000" />
+      <workItem from="1571214640961" duration="2088000" />
+      <workItem from="1571299076793" duration="7405000" />
+      <workItem from="1571404252160" duration="1313000" />
+      <workItem from="1571414559469" duration="18308000" />
+      <workItem from="1571656097719" duration="4638000" />
+      <workItem from="1571825950490" duration="5404000" />
+      <workItem from="1572006487901" duration="16442000" />
+      <workItem from="1572257478436" duration="6819000" />
+      <workItem from="1572347091943" duration="3505000" />
+      <workItem from="1572425101584" duration="2872000" />
+      <workItem from="1572519067818" duration="4625000" />
+      <workItem from="1572615626890" duration="1461000" />
+      <workItem from="1572677086514" duration="16000" />
+      <workItem from="1572677122482" duration="26332000" />
+      <workItem from="1572866991668" duration="1284000" />
+      <workItem from="1572952662356" duration="2322000" />
+      <workItem from="1573215628275" duration="12220000" />
+      <workItem from="1573306506503" duration="286000" />
+      <workItem from="1573306830908" duration="1757000" />
+      <workItem from="1573354867796" duration="4190000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
