@@ -64,6 +64,6 @@ internal class LicenseKey(var issuedBy: String? = null, var description: String?
 
 //fun main() {
 //    println("Code()._c = ${Code()._c}")
-//    println("Code(\"퇴사\")._c = ${Code("퇴사")._c}")
-//    println("Code(\"퇴사\")._c = ${Code("퇴사", 10)._c}")
+//    println("Code(\"ㅇ\")._c = ${Code("ㅇ")._c}")
+//    println("Code(\"ㅇ\")._c = ${Code("ㅇ", 10)._c}")
 //}

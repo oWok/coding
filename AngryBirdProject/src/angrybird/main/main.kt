@@ -14,7 +14,7 @@ class GameStageI {
 //    }
 
 //    클래스 상속 다형성 Flock => Red, Blues, Chuck
-        listOf<Flock>(Red("종우"), Red("화민"), Blues("수경"), Blues("퇴사"), Chuck("2020"), Chuck("0430")).forEach {
+        listOf<Flock>(Red("ㅇ"), Red("ㅇ"), Blues("ㅇ"), Blues("ㅇ"), Chuck("2020"), Chuck("0430")).forEach {
             with(it) {
                 readyForShoot() // Flock에서 상속
                 adjusAngleLength() // Flock에서 상속

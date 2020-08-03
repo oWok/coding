@@ -54,9 +54,9 @@ fun main() {
     println("12.code() = ${12.code()}")
     println()
 
-    println("20200430 집으로 가자!! => (md5) ${"20200430 집으로 가자!!".hash()}")
-    println("20200430 집으로 가자!! => (sha1) ${"20200430 집으로 가자!!".hash("SHA-1")}")
-    println("20200430 집으로 가자!! => (sha256) ${"20200430 집으로 가자!!".hash("SHA-256")}")
+    println("ㅇ!! => (md5) ${"ㅇ!!".hash()}")
+    println("ㅇ!! => (sha1) ${"ㅇ!!".hash("SHA-1")}")
+    println("ㅇ!! => (sha256) ${"ㅇ!!".hash("SHA-256")}")
 
     println()
     println("""
@@ -65,5 +65,5 @@ fun main() {
         |This is done via special declarations called extensions. 
         |For example, you can write new functions for a class from a third-party library 
         |that you can't modify. Such functions are available for calling in the usual way as if they were methods of the original class. 
-    """.trimMargin().mask("Kotlin", "jetbrain").mask("class", "퇴사").mask("functions", "2020년4월30일").hash("SHA-1").hash("SHA-512"))
+    """.trimMargin().mask("Kotlin", "jetbrain").mask("class", "ㅇ").mask("functions", "2020년4월30일").hash("SHA-1").hash("SHA-512"))
 }

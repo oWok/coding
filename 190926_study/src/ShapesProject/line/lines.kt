@@ -76,8 +76,8 @@ class MyDashedLine: MyLine {
 
 //fun main() {
 //    val line1: MyLine = MyLine()
-//    val line2: MyLine = MyLine("퇴사")
-//    val line3: MyLine = MyLine(10,10,50,70, "20200430퇴사")
+//    val line2: MyLine = MyLine("ㅇ")
+//    val line3: MyLine = MyLine(10,10,50,70, "20200430ㅇ")
 //    val line4: MyLine = MyLine(MyPoint(), MyPoint(50,30), "20200501대구로 가자")
 //    val line5: MyDootedLine = MyDootedLine(10, 10, 50, 20, "툇")
 //    val line6: MyDashedLine = MyDashedLine(10, 10, 50, 20, "툇")

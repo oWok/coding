@@ -102,10 +102,10 @@ fun play(bird: Flock) {
 }
 
 fun main() {
-    val r2: SuperHeroes.Red2 = SuperHeroes.Red2("종우")// 중첩클래서 / kotlin에서는 내부클래스라 부르지 않고 중첩클래스라고 부름
-//    val nv = SuperHeroes.Nova("화민") // err
-    val nv = SuperHeroes().Nova("화민") // 외부클래스에 생성자를 호출해줘야함
-    val nv2: SuperHeroes.Nova = SuperHeroes().Nova("민주") // 타입지정할때는 외부클래스 및 자신의 클래스 생성자를 안적어줌
+    val r2: SuperHeroes.Red2 = SuperHeroes.Red2("ㅇ")// 중첩클래서 / kotlin에서는 내부클래스라 부르지 않고 중첩클래스라고 부름
+//    val nv = SuperHeroes.Nova("ㅇ") // err
+    val nv = SuperHeroes().Nova("ㅇ") // 외부클래스에 생성자를 호출해줘야함
+    val nv2: SuperHeroes.Nova = SuperHeroes().Nova("ㅇ") // 타입지정할때는 외부클래스 및 자신의 클래스 생성자를 안적어줌
 
     println("nested class r2 : ${r2.javaClass}")
     println("nested class nv : ${nv.javaClass}")

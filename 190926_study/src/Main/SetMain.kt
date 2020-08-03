@@ -43,8 +43,8 @@ fun main() {
     //부분집합
 
     val myName = "WON".toSet()
-    val yourName = "퇴사".toSet()
-    val hisName = "2020년 5월 7일 퇴사 하자".toSet()
+    val yourName = "ㅇ".toSet()
+    val hisName = "2020년 5월 7일 ㅇ 하자".toSet()
 
     println("myAlphabets.containsAll() = ${myAlphabets.containsAll(myName)}")
     println("myAlphabets.containsAll() = ${myAlphabets.containsAll(yourName)}")

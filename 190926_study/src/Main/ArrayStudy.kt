@@ -32,7 +32,7 @@ fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in
     arr_A.set(0, 1)
     arr_B.set(0, 12)
     arr_C.set(0, 'K')
-    arr_D.set(0, "퇴사")
+    arr_D.set(0, "ㅇ")
     arr_D[1] = "하고싶다"
     //arr.get(x) == arr[x]
     bw.write("a.get() = ${arr_A.get(0)}\ta.get() = ${arr_A[0]}\n")
@@ -46,10 +46,10 @@ fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in
 
     bw.write("-------------------------------------\n")
 
-    val f1 = arrayOf("퇴사->", "2020년", "5월 6일", "혹은", "5월 7일")
+    val f1 = arrayOf("ㅇ->", "2020년", "5월 6일", "혹은", "5월 7일")
     val f2: Array<String> = Array(3, {"_"})
 
-    f2[2] = "퇴사다 퇴사" // == f2[f2.lastIndex] lastIndex -> 마지막 인덱스
+    f2[2] = "ㅇ다 ㅇ" // == f2[f2.lastIndex] lastIndex -> 마지막 인덱스
     val goal = f1 + f2 // == arrayOf<tyep>(*f1, *f2) "*" -> 펼침 연산자
 
     bw.write("${f1.joinToString(" ")}\n")

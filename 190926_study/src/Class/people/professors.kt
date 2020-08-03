@@ -52,10 +52,10 @@ class Professor2(_name: String, _age: Int = 30){
 
 fun main() {
     val p1 = Professor("원종우", 26) // p.c
-    val p2 = Professor("손화민") // p.c
-    val p3 = Professor2("종우", 26, "퇴사") // s1.c
-    val p4 = Professor2("화민", 24, "퇴사", 100.0) // s1.c
-    val p5 = Professor2("유주", 25, "퇴사") // s1.c
+    val p2 = Professor("ㅇㅇㅇ") // p.c
+    val p3 = Professor2("종우", 26, "ㅂ") // s1.c
+    val p4 = Professor2("ㅇㅇ", 24, "ㅂ", 100.0) // s1.c
+    val p5 = Professor2("ㅈ", 25, "ㅂ") // s1.c
 
 //    p3.showStatus(1)
 //    p4.showStatus(2)

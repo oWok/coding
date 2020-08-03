@@ -13,8 +13,8 @@ fun main() {
     println("num = $num")
     println("str = $str")
 
-    val (i, you, we) = Triple("원종우", "손화민", "우리")
-    val t3 = Triple("원종우", "손화민", "우리").component3() // .third
+    val (i, you, we) = Triple("ㄱ", "ㅈ", "ㄷ")
+    val t3 = Triple("ㄱ", "ㅈ", "ㄷ").component3() // .third
     println("i = $i, you = $you, we = $we, $t3")
 
     for((i, c) in ('A'..'Z').withIndex()){

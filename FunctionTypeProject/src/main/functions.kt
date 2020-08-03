@@ -2,7 +2,7 @@ package main
 
 fun myFun(p: () -> Unit) = p() // p: () -> Unit 라는 함수는 아무 인자값도 받지 않고 아무것도 리턴하지 않는 함수 // 임보크 (연산자 오버로딩)
 // p = {
-//    println("Hello Kotlin FP!! (퇴사 -> 20200430)")
+//    println("Hello Kotlin FP!! (ㅈ -> ㄷ)")
 //}
 
 // HOF HIGHER OF FUNCTION
@@ -38,13 +38,13 @@ val concats = fun(ints: List<Int>, sep: String): String {
 
 fun main() {
     myFun {
-        println("Hello Kotlin FP!! (퇴사 -> 20200430)")
+        println("Hello Kotlin FP!! (ㅈ -> ㄷ)")
     }
     
     // 1. 변수에 함수를 담을 수 있음
-    val printName = fun(name: String) { println("당신의 이름은 ${name}입니다! 2020년 04월 30일에 퇴사하시오")} // 익명함수
+    val printName = fun(name: String) { println("당신의 이름은 ${name}입니다! ㄷ ㅈ하시오")} // 익명함수
     
-    printName("원종우")
+    printName("ㅇ")
     printName("s")
     printName("a")
     println("printName.javaClass = ${printName.javaClass}")
@@ -52,13 +52,13 @@ fun main() {
     val pName2: (String) -> Unit = printName // 익명함수 어나미어스? 함수
     pName2("f")
 
-    val pName3 = {name: String -> println("2020년 04월 30일 퇴사할 ${name} 입니다!!!!!")} // 람다식
-    pName3("원종우")
+    val pName3 = {name: String -> println("ㅇ ${name} 입니다!!!!!")} // 람다식
+    pName3("ㅇ")
 
     // 2. 인자로 전달할 수 있음
-    takePrintNameFunction("원종우", pName2)
-    takePrintNameFunction("a", fun(n: String) {println("2020년 04월 30일까지")})
-    takePrintNameFunction("s", {x: String -> println("${x} 157일 남았다")})
+    takePrintNameFunction("ㅇ", pName2)
+    takePrintNameFunction("a", fun(n: String) {println("ㄴ")})
+    takePrintNameFunction("s", {x: String -> println("${x} ㅁ ㅁ")})
 
     // 3. 변환값으로 리턴할 수 있음
     takePrintNameFunction("종우", supplyPrintNameFunction())

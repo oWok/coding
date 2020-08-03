@@ -40,7 +40,7 @@ fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in
 //    println("e.javaClass = ${e.javaClass} ${Float.MIN_VALUE} ~ ${Float.MAX_VALUE}")
 //    println("f.javaClass = ${f.javaClass} ${Double.MIN_VALUE} ~ ${Double.MAX_VALUE}")
 //    val obj1 = User("원종우", 26)
-//    val obj2 = NoData("퇴사", 213)
+//    val obj2 = NoData("ㅇ", 213)
 //
 //    println(obj1.toString())
 //    println(obj2)
@@ -76,7 +76,7 @@ fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in
 //    println("e.javaClass = ${e.javaClass} ${Float.MIN_VALUE} ~ ${Float.MAX_VALUE}")
 //    println("f.javaClass = ${f.javaClass} ${Double.MIN_VALUE} ~ ${Double.MAX_VALUE}")
 //    val obj1 = User("원종우", 26)
-//    val obj2 = NoData("퇴사", 213)
+//    val obj2 = NoData("ㅇ", 213)
 //
 //    println(obj1.toString())
 //    println(obj2)
@@ -160,15 +160,15 @@ fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in
 //class test constructor() {
 //    fun ex(name : String) {
 //        when(name) {
-//            "퇴사하고싶다" -> println("5월 6일 혹은 5월 7일")
-//            else -> println("퇴사해야지 왜 안함")
+//            "ㅇ하고싶다" -> println("5월 6일 혹은 5월 7일")
+//            else -> println("ㅇ해야지 왜 안함")
 //        }
 //    }
 //
 //    fun number(num : Int){
 //        when(num){
 //            in 0..9 -> println("한자리")
-//            else -> println("퇴사")
+//            else -> println("ㅇ")
 //        }
 //    }
 //}

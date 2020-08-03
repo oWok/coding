@@ -3,7 +3,7 @@ package Main
 fun main() {
     whichType(123.22)
     whichType(11)
-    whichType("퇴사")
+    whichType("ㅇ")
     whichType('가')
     whichType(true)
     whichType(123L)

@@ -20,14 +20,14 @@ fun main() {
 
     println("-----------------------------------------")
     // mutable
-    //frList[6] = "퇴사" --> 사이즈 추가 불가
-    //frList[frList.lastIndex] = "퇴사" --> 사이즈 추가 불가
+    //frList[6] = "ㅇ" --> 사이즈 추가 불가
+    //frList[frList.lastIndex] = "ㅇ" --> 사이즈 추가 불가
 
-    //val myNewFriends = mutableListOf<String>("퇴사") // 가변리스트
-    //val myNewFriends: MutableList<String> = mutableListOf<String>("퇴사") // 가변리스트 -> 형지정
+    //val myNewFriends = mutableListOf<String>("ㅇ") // 가변리스트
+    //val myNewFriends: MutableList<String> = mutableListOf<String>("ㅇ") // 가변리스트 -> 형지정
 
     val myNewFriends = myFriends.toMutableList() // 불변리스트를 가변으로 담을때 xxx.toMutableList
-    myNewFriends.add("퇴사 하자 종우야") // 추가
+    myNewFriends.add("ㅇ 하자 ㅇ") // 추가
     println("myNewFriends = ${myNewFriends} / ${myNewFriends.size}")
 
     myNewFriends.set(frList.lastIndex-1, "shinyujoo") //변경
@@ -43,8 +43,8 @@ fun main() {
                 |Kotlin doesn't limit you to the common subset of all APIs in the world.
                 |Every component can share as much code as needed with others but can access platform APIs at any time through the expect/actual mechanism provided by the language.""".trimMargin()*/
     // 위에꺼는 원래 썻던거거
-   val muStr = """퇴사 하고 싶다 퇴사 하고 집 가고 싶다 
-        |2020년 5월 6일이나 7일이면 퇴사다 대구 빨리 가고 싶다""".trimMargin()
+   val muStr = """ㅇ 하고 싶다 ㅇ 하고 집 가고 싶다 
+        |2020년 ㅇ고 싶다""".trimMargin()
 
 
 

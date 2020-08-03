@@ -54,6 +54,6 @@ fun main() {
 //    sp.printPoint()
 
     drawLineWithTwoPoint(sp, null, "null 테스트")
-    drawLineWithTwoPoint(sp, ep, "퇴사")
-    drawLineWithTwoPoint(sp, ep2, "퇴사2")
+    drawLineWithTwoPoint(sp, ep, "ㅇ")
+    drawLineWithTwoPoint(sp, ep2, "ㅇ2")
 }

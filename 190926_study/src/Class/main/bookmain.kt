@@ -3,12 +3,12 @@ package Class.main
 import Class.books.Book // 클래스 임포트 (class import)
 
 fun main() {
-    val mybook1: Book = Book("퇴사", "원종우")
+    val mybook1: Book = Book("a", "a")
     val mybook2: Book = Book()
-    val mybook3: Book = Book("2020년 5월 6 ~ 7일 퇴사")
+    val mybook3: Book = Book("a")
     val mybook4: Book = Book(author = "종우")
     val mybook5: Book = mybook1 // mybook5에 mybook1을 넣어줌
-    mybook5.author = "퇴사한 종우"
+    mybook5.author = "w 종우"
 
 //    mybook1.showBook()
 //    mybook2.showBook()

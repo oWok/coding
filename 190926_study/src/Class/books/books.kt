@@ -35,7 +35,7 @@ class Book(var title: String?, var author: String?) {
 
 // 기본인자 적용 => 네임드 파리마터 적용 가능
 class Book(var title: String? = null, var author: String? = "작자미상") {
-    val publisher: String = "퇴사가 목표인 원종우"
+    val publisher: String = "aa"
 
     fun showBook() {
         println("'${title ?: "no name"}'책, ${author ?: "작자미상"} ${if(!author.equals("작자미상")) "지음" else ""} ${publisher} 발행")
@@ -46,9 +46,9 @@ class Book(var title: String? = null, var author: String? = "작자미상") {
 //    // 새로운 타입을 사용해서 변수/상수를 생성
 ////    val mybook: Book = Book()  // 생성자 호출 / 개체 (인스턴스화)
 ////    mybook.publisher // 필드의 내용을 참조
-////     mybook.publisher = "퇴사" -> val => read only / error
-////    mybook.title = "퇴사"
-////    val mybook = Book("퇴사", "원종우")
+////     mybook.publisher = "ㅇ" -> val => read only / error
+////    mybook.title = "ㅇ"
+////    val mybook = Book("ㅇ", "원종우")
 ////    val mybook = Book()
 //    val mybook = Book(author = "원종우")
 //

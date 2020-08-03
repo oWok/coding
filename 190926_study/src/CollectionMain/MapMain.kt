@@ -12,13 +12,13 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))){
 
     println("${stMap} with size -> ${stMap.size}") //map은 value의 값의 중복은 허용하나 key값의 중복은 허용하지 않음
     println("${stMap.keys} / ${stMap.values}")
-    println("stMap[\"종우\"] = ${stMap["종우"]} // ${stMap["유주"]}") // .get(key)와 동일 key 에 대응되는 value 가 나옴
+    println("stMap[\"종우\"] = ${stMap["종우"]} // ${stMap["ㅇ"]}") // .get(key)와 동일 key 에 대응되는 value 가 나옴
     println("stMap[\"종우\"] = ${stMap["종우"]} // ${stMap.get("화민")}")
-    println("stMap[\"종우\"] = ${stMap.getValue("종우")} // ${stMap["유주"]}")
-    //println("stMap[\"종우\"] = ${stMap.getValue("종우")} // ${stMap.getValue("유주")}") // getValue 는 값이 없으면 예외가 발생함
+    println("stMap[\"종우\"] = ${stMap.getValue("종우")} // ${stMap["ㅇ"]}")
+    //println("stMap[\"종우\"] = ${stMap.getValue("종우")} // ${stMap.getValue("ㅇ")}") // getValue 는 값이 없으면 예외가 발생함
 
     println("---------------------------------------")
-    val studentScores: Map<String, Float> = mapOf("종우" to 5.5f, "화민".to(5.6f), Pair("유주", 3.5f)) //Pair(Key, Value) -> Key.to(Value) or Key to Value Entry(Key, Value)
+    val studentScores: Map<String, Float> = mapOf("종우" to 5.5f, "화민".to(5.6f), Pair("ㅇ", 3.5f)) //Pair(Key, Value) -> Key.to(Value) or Key to Value Entry(Key, Value)
     println("studentScores = ${studentScores} with size -> ${studentScores.size}")
     println("studentScores.keys = ${studentScores.keys}")
     println("studentScores.keys = ${studentScores.values}")
@@ -27,7 +27,7 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))){
     //map 에도 가변성과 불변성이 존재함
     //studentScores["종우"] = 12.3f -> 불변
 
-    val studentScores_Mutable: MutableMap<String, Float> = mutableMapOf("종우" to 5.5f, "화민".to(5.6f), Pair("유주", 3.5f))
+    val studentScores_Mutable: MutableMap<String, Float> = mutableMapOf("종우" to 5.5f, "화민".to(5.6f), Pair("ㅇ", 3.5f))
     studentScores_Mutable["화민"] = 5.5f
 
     println("stduentScores_Mutable = ${studentScores_Mutable} with size -> ${studentScores_Mutable.size}")
@@ -35,11 +35,11 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))){
     println("studentScores_Mutable = ${studentScores_Mutable.values}")
 
     //추가
-    studentScores_Mutable["수경"] = 4.1f // == set(), put()
-    //studentScores_Mutable["소정"] = 2.2f
-    studentScores_Mutable.put("소정", 2.2f)
+    studentScores_Mutable["ㅇ"] = 4.1f // == set(), put()
+    //studentScores_Mutable["ㅇ"] = 2.2f
+    studentScores_Mutable.put("ㅇ", 2.2f)
     //삭제
-    studentScores_Mutable.remove("유주")
+    studentScores_Mutable.remove("ㅇ")
 
     println("stduentScores_Mutable = ${studentScores_Mutable} with size -> ${studentScores_Mutable.size}")
     println("studentScores_Mutable = ${studentScores_Mutable.keys}")

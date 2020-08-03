@@ -55,13 +55,13 @@ fun main() {
 //    val s = Student() // 객체의 타입이 인스턴스화 됨
     val s1 = Student("원종우", 26) // realScore는 default로 1.0으로 되어 있음
     val s2: Student = Student(null, 10, 4.0f)
-    val s3 = Student("손화민", 23, 4.0f)
-    val s4 = Student("신유주", 25, 3.3f)
+    val s3 = Student("ㄷ", 23, 4.0f)
+    val s4 = Student("ㅈ", 25, 3.3f)
 
     val s5 = Student("원종우", 26) // realScore는 default로 1.0으로 되어 있음
     val s6: Student = Student(null, 10, 2.0f)
-    val s7 = Student("손화민", 23, 4.0f)
-    val s8 = Student("신유주", 25, 3.3f)
+    val s7 = Student("ㄷ", 23, 4.0f)
+    val s8 = Student("ㅈ", 25, 3.3f)
     val sAll = arrayOf(s5, s6, s7, s8)
 //    s1.email = "퇴사@퇴사.co.kr" // val이기 떄문에 수정 불가
     s1.realScore = 4.0f // set 설정 // var이기 떄문에 수정 가능

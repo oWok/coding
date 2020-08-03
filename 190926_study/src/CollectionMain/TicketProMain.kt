@@ -5,7 +5,7 @@ import java.util.*
 /*
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                    ***  VIP 티켓 발권  ***    [001]
-  '퇴사' event
+  'ㅇ' event
                                         rank S / 20000원
                                         2020년 5월 7일 까지
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -22,7 +22,7 @@ import java.util.*
 // 주어진 현금으로 티켓을 랜덤하게 발권하여, 그 발권 리스트를 출력
 fun main() {
     // JCF (Java Collection Framework) => JAM에서 연결되어 있음
-    val eventTitles = listOf<String>("퇴사", "프로야구", "음악회", "요리 축제", "이직")
+    val eventTitles = listOf<String>("ㅇ", "프로야구", "음악회", "요리 축제", "이직")
     val eventRanks: HashMap<Char, Int> = hashMapOf<Char, Int>()
     eventRanks.put('N', 1000) // 노말 등급 1000원
     eventRanks.put('H', 3000) // 하이노말 등급 3000원

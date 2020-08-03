@@ -260,7 +260,7 @@ class Chuck(_name: String): Flock(), AcceleratorI {
 //    val bird1 = Red()
 //    bird1.name = "레드1"
 
-//    val bird1 = Red("종우")
+//    val bird1 = Red("ㅇ")
 //    println("bird1 = ${bird1}") // toString()
 //    bird1.readyForShoot()
 //    bird1.adjusAngleLength()
@@ -268,7 +268,7 @@ class Chuck(_name: String): Flock(), AcceleratorI {
 //    bird1.crashWithDamage()
 //    bird1.landingForEnd()
 
-//    listOf<Red>(Red("종우"), Red("화민"), Red("퇴사"), Red("20200430")).forEach {
+//    listOf<Red>(Red("ㅇ"), Red("ㅇ"), Red("ㅇ"), Red("20200430")).forEach {
 //        it.readyForShoot()
 //        it.adjusAngleLength()
 //        it.flyAfterShoot()
@@ -276,7 +276,7 @@ class Chuck(_name: String): Flock(), AcceleratorI {
 //        it.landingForEnd()
 //    }
 
-//    listOf<Blues>(Blues("종우"), Blues("화민"), Blues("수경")).forEach {
+//    listOf<Blues>(Blues("ㅇ"), Blues("ㅇ"), Blues("ㅇ")).forEach {
 //        with(it) {
 //            readyForShoot()
 //            adjusAngleLength()

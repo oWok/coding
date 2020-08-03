@@ -7,8 +7,8 @@ import java.util.* // 자바것도 임폴트 가능 (코틀린은 자바기반)
 //fun main() {
 ////    val c1: Code = Code()
 ////    println(getCode(null, null))
-////    println(getCode("퇴사", null))
-////    println(getCode("퇴사", 7))
+////    println(getCode("ㅇ", null))
+////    println(getCode("ㅇ", 7))
 //
 ////    fun localFun() { // 함수안에 함수가 정의 가능 용도는 거의 없음 // 로컬 범위의 제안자에서는 internal과 같은 가시성을 가진 것을 정의 할 수 없음
 ////        println("local test")
@@ -16,8 +16,8 @@ import java.util.* // 자바것도 임폴트 가능 (코틀린은 자바기반)
 //
 ////    localFun()
 //
-//    val lc1 = getLicenseKey("퇴사20200430")
-//    val lc2 = getLicenseKey("퇴사", 6)
+//    val lc1 = getLicenseKey("ㅇ20200430")
+//    val lc2 = getLicenseKey("ㅇ", 6)
 //
 //    println("lc1 = ${lc1}")
 //    println("lc2 = ${lc2}")
@@ -27,15 +27,15 @@ import java.util.* // 자바것도 임폴트 가능 (코틀린은 자바기반)
 fun main() {
 //    printLincenseKey(null, "종우", 1, "종우의 테스트 키")
 //    println()
-//    printLincenseKey(LicenseKey(), "홤니", 2, "홤니의 디폴트 라이센스 키")
+//    printLincenseKey(LicenseKey(), "ㅇㅇ", 2, "ㅇㅇ의 디폴트 라이센스 키")
 //    println()
-//    printLincenseKey(LicenseKey(), "원종우", 3, "퇴사")
+//    printLincenseKey(LicenseKey(), "원종우", 3, "ㅇ")
 
     printLincenseKey2(null, "종우", 1, "종우의 테스트 키")
     println()
-    printLincenseKey2(LicenseKey(), "홤니", 2, "홤니의 디폴트 라이센스 키")
+    printLincenseKey2(LicenseKey(), "ㅇㅇ", 2, "ㅇㅇ의 디폴트 라이센스 키")
     println()
-    printLincenseKey2(LicenseKey(), "원종우", 3, "퇴사")
+    printLincenseKey2(LicenseKey(), "원종우", 3, "ㅇ")
 }
 
 internal fun printLincenseKey(lcKey: LicenseKey?, issuer: String, order: Int, desc: String) { // let을 사용한 것

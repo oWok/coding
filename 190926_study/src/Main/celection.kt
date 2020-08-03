@@ -4,10 +4,10 @@ fun main(){
     //map -> key, vbalue pair
     //{"name":"senti"}
 
-    var map = mapOf(Pair("퇴사", "하고싶다"))
+    var map = mapOf(Pair("ㅇ", "하고싶다"))
     var mapp = mutableMapOf<String, String>()
-    mapp.put("퇴사", "하고싶다")
-    mapp.put("2020년", "5월6일")
+    mapp.put("ㅇ", "하고싶다")
+    mapp.put("3", "2")
 
 
     println(mapp.keys)

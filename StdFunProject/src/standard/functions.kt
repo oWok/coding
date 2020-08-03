@@ -12,7 +12,7 @@ class StandardFunction {
     }
 
     fun letFunc(): Unit {
-        val obj: String = "2020년04월30일 퇴사!"
+        val obj: String = "ㄷ!"
         var count = 0
         val result: Char = obj.let {
             println("[${count}] in the let() function: ")
@@ -27,7 +27,7 @@ class StandardFunction {
         println("result = ${result} and count => ${count}\n\n")
     }
     fun mapFunc(): Unit {
-        val obj: List<Char> = "2020년04월30일 퇴사!".toList()
+        val obj: List<Char> = "ㄷ!".toList()
         var count = 0
         val result = obj.map {
             println("[${count}] in the map() function: ")
@@ -46,7 +46,7 @@ class StandardFunction {
 
 
     fun withFunc(): Unit {
-        val obj: Toy = Toy("종우", 20200430, ToyType.CAR)
+        val obj: Toy = Toy("종우", ㄱ, ToyType.CAR)
         var count = 0
         val result = with(obj) {// with는 일반함수 처럼 동작
             println("[${count}] in the with() function: ")
@@ -54,7 +54,7 @@ class StandardFunction {
             println("this = ${this}")
             println("this@StandardFunction = ${this@StandardFunction}")
 //            println("it = ${it}") // error
-            this.name += "야 퇴사까지 열심히 공부해서 준비하자"
+            this.name += "야 ㅂ까지 열심히 공부해서 준비하자"
             price = 20200429
             category = ToyType.SPACHSHIP
 //            return
@@ -65,7 +65,7 @@ class StandardFunction {
         println("result => ${result} and count => ${count}\nobj => ${obj}\n\n")
     }
     fun applyFunc(): Unit {
-        val obj: Toy = Toy("퇴사 ")
+        val obj: Toy = Toy("ㅂ ")
         var count = 0
         val result = obj.apply {// apply는 일반함수 처럼 동작
             println("[${count}] in the apply() function: ")
@@ -73,7 +73,7 @@ class StandardFunction {
             println("this = ${this}")
             println("this@StandardFunction = ${this@StandardFunction}")
 //            println("it = ${it}") // error
-            this.name += ": 20200430"
+            this.name += ": ㄱ"
             price = 20200501
             category = ToyType.SPACHSHIP
 //            return
@@ -84,8 +84,8 @@ class StandardFunction {
         println("result => ${result} and count => ${count} \nobj => ${obj}\n\n")
     }
     fun runFunc(): Unit {
-        val obj: Toy = Toy("퇴사 ")
-        val obj2: Toy = Toy("퇴사").apply { name += " -> 20200430" }.apply { price = 152 }.apply { category = ToyType.BRICK } // 빌드를 통해 이렇게도 가능
+        val obj: Toy = Toy("ㅂ ")
+        val obj2: Toy = Toy("ㅂ").apply { name += " -> ㄱ" }.apply { price = 152 }.apply { category = ToyType.BRICK } // 빌드를 통해 이렇게도 가능
         var count = 0
         val result = obj.run {// run은 일반함수 처럼 동작
             println("[${count}] in the run() function: ")
@@ -93,7 +93,7 @@ class StandardFunction {
             println("this = ${this}")
             println("this@StandardFunction = ${this@StandardFunction}")
 //            println("it = ${it}") // error
-            name += ": 20200430"
+            name += ": ㄱ"
             price = 20200429
             category = ToyType.CAR
 //            return
@@ -104,7 +104,7 @@ class StandardFunction {
         println("result => ${result} and count => ${count} \nobj => ${obj}\n\n")
     }
     fun alsoFunc(): Unit {
-        val obj: Toy = Toy("퇴사 ")
+        val obj: Toy = Toy("ㅂ ")
         var count = 0
         val result = obj.also {
             println("[${count}] in the also() function: ")
@@ -112,7 +112,7 @@ class StandardFunction {
             println("this = ${this}")
             println("this@StandardFunction = ${this@StandardFunction}")
             println("it = ${it}")
-//            this.name += ": 20200430" // error
+//            this.name += ": ㄱ" // error
 //            price = 20200501 // error
 //            category = ToyType.SPACHSHIP // error
 //            also에서는 this는 standardfunction을 나타내는 것이지 obj를 나타 내는것이 아님

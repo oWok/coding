@@ -170,7 +170,7 @@ class MemberManager {
         for(mb in this.memberList){
             if(mb.loginName == loginName){ // 내용만 일치 하면 됨
                 if(mb.password == password) {
-                    println("$loginName 회원님 퇴사 성공")
+                    println("$loginName 회원님 ㅇ 성공")
                     return LOGIN_SUCCESS
                 }
                 else {
@@ -304,7 +304,7 @@ fun main() {
 //    findMemberShip(5000.0)
 //    findMemberShip(20000.0)
 
-    val mb1 = Member_data(name = "원종우", loginName = "WON_퇴사")
+    val mb1 = Member_data(name = "원종우", loginName = "WON_ㅇ")
     println("${mb1.name}의 맴버쉽 ${mb1.ms}")
     findMemberShip2(3100.0, mb1)
     mb1.ms.showCard()
@@ -386,9 +386,9 @@ fun main() {
 //    println("str6a === str6b => ${str6a === str6b}")
 //
 //    val memberMgr = MemberManager()
-//    memberMgr.joinMember(Member_data(name = "원종우", loginName = "won_퇴사", password = "퇴사하고싶다"))
-//    memberMgr.joinMember(Member_data(name = "손화민", loginName = "son_퇴사", password = "퇴사하고싶다"))
-//    memberMgr.joinMember(Member_data(name = "이민주", loginName = "lee_퇴사", password = "퇴사하고싶다"))
+//    memberMgr.joinMember(Member_data(name = "원종우", loginName = "won_ㅇ", password = "ㅇㅇ"))
+//    memberMgr.joinMember(Member_data(name = "손ㅇ", loginName = "son_ㅇ", password = "ㅇㅇ"))
+//    memberMgr.joinMember(Member_data(name = "이ㅇ, loginName = "lee_ㅇ", password = "ㅇㅇ"))
 //
 //    val br: BufferedReader = BufferedReader(InputStreamReader(System.`in`)) // `in`이라 표시하는 이유는 코틀린에서 in is as 이런것들은 키워드이기 때문에
 //
@@ -410,8 +410,8 @@ fun main() {
 //
 //    humanMembers[1].id = 1 // setter 접근 호출
 //
-//    val mb2 = Member(2, "손화민", 2.0, 24, true, "hwamin", "퇴사하자")
-//    val mb3 = humanMembers[1].copy(age = 26, loginName = "퇴사하자", password = "20200430")
+//    val mb2 = Member(2, "손ㅇ", 2.0, 24, true, "hwamin", "ㅇ하자")
+//    val mb3 = humanMembers[1].copy(age = 26, loginName = "ㅇ하자", password = "20200430")
 //    val mb4 = mb2.copy(name = "신유주", age = 25, loginName = "sin")
 //
 //    humanMembers.add(mb2)
@@ -424,13 +424,13 @@ fun main() {
 // 7-2
 //fun main() {
 //    // tuples
-//    val backpack = Pair(10, "퇴사")
+//    val backpack = Pair(10, "ㅇ")
 //    println("backpack.toString() = ${backpack.toString()}")
 //    println("backpack.javaClass = ${backpack.javaClass}")
 //    println("backpack.first = ${backpack.first}")
 //    println("backpack.second = ${backpack.second}")
 //
-//    val backpack2 = Triple(20, "20200430", "퇴사")
+//    val backpack2 = Triple(20, "20200430", "ㅇ")
 //    println("backpack2.toString() = ${backpack2.toString()}")
 //    println("backpack2.javaClass = ${backpack2.javaClass}")
 //    println("backpack2.first = ${backpack2.first}")
@@ -440,7 +440,7 @@ fun main() {
 //    // member data class
 //    val mb0 = Member_data()
 //    val mb1 = Member_data(1, "원종우", 5.5,22,true, "xhltkgkwk")
-//    val mb2 = Member_data(2, "손화민", 2.0, 24, true, "hwamin", "퇴사하자")
+//    val mb2 = Member_data(2, "손ㅇ", 2.0, 24, true, "hwamin", "ㅇ하자")
 //
 //
 //    mb2.age = mb2.age + 1 // getter, setter 둘다 사용함

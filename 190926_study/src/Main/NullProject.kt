@@ -1,7 +1,7 @@
 package Main
 
 fun main() {
-    var a: String = "퇴사" // non-null -> null이 불가능한 타입
+    var a: String = "ㅇ" // non-null -> null이 불가능한 타입
     var b: String? = "2020년 5월 7일" // nullable -> null이 가능한 타입
 
     println("a.length = ${a.length}")

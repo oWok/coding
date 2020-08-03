@@ -40,7 +40,7 @@ class MyHtml {
     companion object _GenTable{ // inner객체이기 때문에 클래스의 자원에는 접근 가능 -> 클래스의 타입처럼 접근
         fun generateHtmlObject(_name: String, row: Int = 3, col: Int = 4): MyHtml {
             val mh = MyHtml(_name, row, col)
-            mh.comment = "<!-- 퇴사 auto-generated table bt MyHtml -->"
+            mh.comment = "<!-- ㄷ auto-generated table bt MyHtml -->"
             // 테이블 객체 기록
 
             MyRecord.gen(mh)
@@ -52,7 +52,7 @@ class MyHtml {
     private inner class Tr { // table row에대한 클래스
         val rowHtmlCode = """
             |<tr>
-            | ${"<td> 퇴사 </td>\n".repeat(col)}
+            | ${"<td> ㄷ </td>\n".repeat(col)}
             |</tr>
         """.trimMargin()
     }
@@ -83,16 +83,16 @@ class MyHtml {
 
 fun main() {
 //    MyRecord() // 이 자체가 객체기 때문에 생성자 호출 안됨
-//    MyHtml("퇴사", 2, 3) // 생성자가 private이기 떄문에 error
+//    MyHtml("ㄷ", 2, 3) // 생성자가 private이기 떄문에 error
 
-    val first = MyHtml.generateHtmlObject("퇴사1->20200430") // row : 3 col : 4
-    first.setColumnHeaders("1월31일?", "4월30일?", "5월6일은 확정")
+    val first = MyHtml.generateHtmlObject("ㄷ1->ㅇ") // row : 3 col : 4
+    first.setColumnHeaders("ㅇ?", "ㅇ?", "ㅇ 확정")
 //    println("first.gennerateTable() = ${first.gennerateTable()}")
-    val second = MyHtml.generateHtmlObject("퇴사2")
-    second.setColumnHeaders("퇴사", "하고", "싶다", "2020년", "4월", "30일", "자로", "대구", "가야지")
+    val second = MyHtml.generateHtmlObject("ㄷ2")
+    second.setColumnHeaders("ㄷ", "ㅇ", "ㅇ", "ㄹ", "ㅎ", "ㄷ", "ㅈ", "ㅂ", "ㅗ")
 
-    val third = MyHtml.generateHtmlObject("퇴사3", 7, 2)
-    third.setColumnHeaders("대구", "가고", "싶다")
+    val third = MyHtml.generateHtmlObject("ㄷ3", 7, 2)
+    third.setColumnHeaders("ㅇ", "ㅗ", "ㅂ")
 
     println("생성된 table 개수 : ${MyRecord.showTableCount()}")
 
