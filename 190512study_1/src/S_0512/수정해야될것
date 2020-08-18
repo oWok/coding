@@ -1,0 +1,174 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class Main {
+	public static void main(String[] args) throws IOException{
+	//https://www.acmicpc.net/problem/1475
+		int buy = 0;
+		//int nine_to_six;
+		int check_num[] = new int[10];
+		int room_num;
+		
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		room_num = Integer.parseInt(br.readLine());
+		
+		while(room_num != 0) {
+			
+			for(int i=0;i<10;i++)
+				check_num[i] = 0;
+			
+			while(true) {
+				if(room_num % 10 == 1) {
+					check_num[1]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 2) {
+					check_num[2]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 3) {
+					check_num[3]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 4) {
+					check_num[4]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 5) {
+					check_num[5]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 6  || room_num % 10 == 9 && check_num[9] == 0) {
+					
+					check_num[6]++;
+					
+					if(check_num[6] == 1 && check_num[9] == 1 || check_num[9] == 2 || check_num[6] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 7) {
+					check_num[7]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 8) {
+					check_num[8]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 9 || room_num % 10 == 6 && check_num[6] == 0 && check_num[9] == 0) {
+					
+					check_num[9]++;
+					if(check_num[6] == 1 && check_num[9] == 1 || check_num[9] == 2 || check_num[6] == 2) {
+						buy++;
+						break;
+					}
+				}
+			
+			}
+			if(check_num[6] == 1 && check_num[9] == 1 || check_num[6] == 2 || check_num[9] == 2) 
+				room_num/=100;
+			else
+				room_num/=10;
+		}
+		
+		bw.write(buy + "\n");
+		
+		bw.flush();
+		bw.close();
+	}
+}
+
+//switch (room_num % 10) {
+//case 1:
+//	check_num[1]++;
+//	if(check_num[1] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 2:
+//	check_num[2]++;
+//	if(check_num[2] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 3:
+//	check_num[3]++;
+//	if(check_num[3] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 4:
+//	check_num[3]++;
+//	if(check_num[3] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 5:
+//	check_num[3]++;
+//	if(check_num[3] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 6:
+//	check_num[6]++;
+//	if(check_num[6] == 1 && check_num[9] == 1 || check_num[9] == 2 || check_num[6] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 7:
+//	check_num[7]++;
+//	if(check_num[7] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 8:
+//	check_num[8]++;
+//	if(check_num[8] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 9:
+//	check_num[9]++;
+//	if(check_num[9] == 1 && check_num[6] ==1 || check_num[9] == 2 || check_num[6] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//}
+
+---------------------------------------------------------------------------------------------------
