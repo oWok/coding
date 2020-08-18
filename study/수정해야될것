@@ -1,0 +1,441 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class Main {
+	public static void main(String[] args) throws IOException{
+	//https://www.acmicpc.net/problem/1475
+		int buy = 0;
+		//int nine_to_six;
+		int check_num[] = new int[10];
+		int room_num;
+		
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		room_num = Integer.parseInt(br.readLine());
+		
+		while(room_num != 0) {
+			
+			for(int i=0;i<10;i++)
+				check_num[i] = 0;
+			
+			while(true) {
+				if(room_num % 10 == 1) {
+					check_num[1]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 2) {
+					check_num[2]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 3) {
+					check_num[3]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 4) {
+					check_num[4]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 5) {
+					check_num[5]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 6  || room_num % 10 == 9 && check_num[9] == 0) {
+					
+					check_num[6]++;
+					
+					if(check_num[6] == 1 && check_num[9] == 1 || check_num[9] == 2 || check_num[6] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 7) {
+					check_num[7]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 8) {
+					check_num[8]++;
+					if(check_num[room_num%10] == 2) {
+						buy++;
+						break;
+					}
+				}
+				else if(room_num % 10 == 9 || room_num % 10 == 6 && check_num[6] == 0 && check_num[9] == 0) {
+					
+					check_num[9]++;
+					if(check_num[6] == 1 && check_num[9] == 1 || check_num[9] == 2 || check_num[6] == 2) {
+						buy++;
+						break;
+					}
+				}
+			
+			}
+			if(check_num[6] == 1 && check_num[9] == 1 || check_num[6] == 2 || check_num[9] == 2) 
+				room_num/=100;
+			else
+				room_num/=10;
+		}
+		
+		bw.write(buy + "\n");
+		
+		bw.flush();
+		bw.close();
+	}
+}
+
+//switch (room_num % 10) {
+//case 1:
+//	check_num[1]++;
+//	if(check_num[1] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 2:
+//	check_num[2]++;
+//	if(check_num[2] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 3:
+//	check_num[3]++;
+//	if(check_num[3] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 4:
+//	check_num[3]++;
+//	if(check_num[3] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 5:
+//	check_num[3]++;
+//	if(check_num[3] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 6:
+//	check_num[6]++;
+//	if(check_num[6] == 1 && check_num[9] == 1 || check_num[9] == 2 || check_num[6] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 7:
+//	check_num[7]++;
+//	if(check_num[7] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 8:
+//	check_num[8]++;
+//	if(check_num[8] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//case 9:
+//	check_num[9]++;
+//	if(check_num[9] == 1 && check_num[6] ==1 || check_num[9] == 2 || check_num[6] == 2) {
+//		buy++;
+//		break;
+//	}
+////	continue;
+//}
+
+---------------------------------------------------------------------------------------------------
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class Main {
+	public static void main(String[] args) throws IOException{
+	//https://www.acmicpc.net/problem/6064
+		int input_count, max_x, max_y, search_x, search_y, x, y, count;
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		input_count = Integer.parseInt(br.readLine());
+		
+		for(int i=0;i<input_count;i++) {
+			String input = br.readLine();
+			String[] txt = input.split(" ");
+			
+			max_x = Integer.parseInt(txt[0]);
+			max_y = Integer.parseInt(txt[1]);
+			search_x = Integer.parseInt(txt[2]);
+			search_y = Integer.parseInt(txt[3]);
+			
+			x = 0;
+			y = 0;
+			count = 0;
+			
+			while(true) {
+				x++;
+				y++;
+				count++;
+				
+				
+				if(x == search_x && y == search_y) {
+					bw.write(count + "\n");
+					break;
+				}
+				
+				
+				
+				if(max_x % 2 == 0 && max_y % 2 == 0) {
+					if(search_x % 2 == 0) {
+						if(search_y % 2 != 0) {
+							bw.write(-1 + "\n");
+							break;
+						}
+					}
+					else {
+						if(search_y % 2 == 0) {
+							bw.write(-1 + "\n");
+							break;
+						}
+					}
+				}
+				
+				
+				
+				if(x == max_x)
+					x = 0;
+				 
+				if(y == max_y)
+					y = 0;
+			}
+		}
+		
+		bw.flush();
+		bw.close();
+		
+	}
+}
+//시간초과
+---------------------------------------------------------------------------------------------------
+
+//https://www.acmicpc.net/problem/2869 -> 다시풀어보기
+
+
+---------------------------------------------------------------------------------------------------
+
+ //https://www.acmicpc.net/problem/1018
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        StringTokenizer st = new StringTokenizer(br.readLine().trim());
+        int row = Integer.parseInt(st.nextToken());
+        int col = Integer.parseInt(st.nextToken());
+        int count = 0;
+        String[] chess_pan = new String[row];
+        char[][] chess = new char[row][col];
+
+        for(char[] change : chess)
+            Arrays.fill(change, ' ');
+
+        for(int i=0;i<row;i++){
+            chess_pan[i] = br.readLine().trim();
+            for(int j=0;j<col;j++){
+                chess[i][j] = chess_pan[i].charAt(j);
+            }
+        }
+
+        
+
+        bw.write(count + "\n");
+        bw.flush();
+        bw.close();
+		
+---------------------------------------------------------------------------------------------------
+		
+import java.io.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.StringTokenizer;
+
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        //https://www.acmicpc.net/problem/2108
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int count = Integer.parseInt(br.readLine().trim());
+        int num_avg = 0, num_range = 0, poorest_value = 0, num_mid = 0, sum = 0; //산술평균, 범위, 최빈값, 중앙값
+        int[][] number = new int[count][2];
+        int poorest_count = 0;
+
+       for(int[] num : number)
+           Arrays.fill(num, 0);
+
+        for(int i=0;i<count;i++){
+            StringTokenizer st = new StringTokenizer(br.readLine().trim());
+            number[i][0] = Integer.parseInt(st.nextToken());
+            sum+=number[i][0];
+        }
+
+        for(int i=0;i<count-1;i++){
+            for(int j=i+1;j<count;j++){
+                if(number[i][0] == number[j][0]) {
+                    number[i][1]++;
+                    poorest_count++;
+                }
+            }
+        }
+
+        Arrays.sort(number, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return Integer.compare(o1[0], o2[0]);
+            }
+        });
+
+        num_mid = number[count/2][0];
+        num_avg = sum/count;
+
+        if(count != 1)
+            num_range = number[count-1][0] - number[0][0];
+
+        Arrays.sort(number, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return Integer.compare(o1[1], o2[1]);
+            }
+        });
+
+        if(count == 1)
+            poorest_value = number[0][0];
+
+        if(poorest_count > 0)
+            poorest_value = number[1][0];
+        else
+            poorest_value = number[count-1][0];
+
+        bw.write(num_avg + "\n");
+        bw.write(num_mid + "\n");
+        bw.write(poorest_value + "\n");
+        bw.write(num_range + "\n");
+
+        bw.flush();
+        bw.close();
+
+    }
+}
+
+---------------------------------------------------------------------------------------------------
+
+import java.io.*;
+import java.util.StringTokenizer;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        //https://www.acmicpc.net/problem/1541
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        String sum_ma = br.readLine().trim(), temp = "";
+
+        StringTokenizer minsu, plus;
+        int num_minsu = 0, num_plus = 0;
+        for(int i=0;i<sum_ma.length();i++){
+            if(sum_ma.charAt(i) == '-'){
+                plus = new StringTokenizer(sum_ma.substring(0, i).replace("+", " "));
+                minsu = new StringTokenizer(sum_ma.substring(i+1, sum_ma.length()).replaceAll("[- | +]", " "));
+
+                while (minsu.hasMoreElements())
+                    num_minsu += Integer.parseInt(minsu.nextToken());
+
+                while (plus.hasMoreElements())
+                    num_plus += Integer.parseInt(plus.nextToken());
+
+                break;
+            }
+        }
+
+        bw.write(num_plus-num_minsu + "\n");
+        bw.flush();
+        bw.close();
+    }
+
+}
+
+---------------------------------------------------------------------------------------------------
+
+import java.io.*;
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        //https://www.acmicpc.net/problem/5430
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int input_testCase = Integer.parseInt(br.readLine().trim());
+        LinkedList<Integer> DeQ = new LinkedList<>();
+
+        for(int i=0;i<input_testCase;i++){
+            String[] input_fun = br.readLine().trim().split("");
+            int input_test = Integer.parseInt(br.readLine().trim());
+            String string_to_num = br.readLine().trim();
+            string_to_num.substring(1,string_to_num.length()-1);
+
+            for(int j=0;j<input_test;j++){
+                DeQ.offer(Integer.parseInt(string_to_num.split(",") + ""));
+            }
+
+            for(int j=0;j<input_fun.length;j++){
+                if(input_fun[j].equals("R")){
+                    for(int k=0;k<DeQ.size();k++)
+                        DeQ.offer(DeQ.pollLast());
+                }
+                else{
+                    if(DeQ.isEmpty()){
+                        bw.write("error\n");
+                        break;
+                    }
+                    else{
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+		
+---------------------------------------------------------------------------------------------------
